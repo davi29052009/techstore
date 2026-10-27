@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore | Tecnologia para você</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">TECH<span>STORE</span></a>
+
+        <nav class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+
+        <div class="header-actions">
+            <input type="search" id="pesquisa" placeholder="Buscar produtos...">
+            <button class="carrinho-btn" id="botao-carrinho">
+                🛒 <span id="contador">0</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner" id="inicio">
+            <div class="banner-conteudo">
+                <span class="destaque">NOVIDADES TECHSTORE</span>
+                <h1>Tecnologia que transforma seu mundo.</h1>
+                <p>
+                    Encontre os melhores eletrônicos e acessórios
+                    para o seu dia a dia.
+                </p>
+                <a href="#produtos" class="btn-principal">
+                    Explorar produtos
+                </a>
+            </div>
+            <div class="banner-icone">🎧</div>
+        </section>
+
+        <section class="beneficios">
+            <div>🚚 Frete para todo o Brasil</div>
+            <div>🔒 Compra segura</div>
+            <div>💳 Pagamento facilitado</div>
+        </section>
+
+        <section class="produtos-section" id="produtos">
+            <div class="section-topo">
+                <div>
+                    <span class="subtitulo">NOSSO CATÁLOGO</span>
+                    <h2>Produtos em destaque</h2>
+                </div>
+                <select id="filtro">
+                    <option value="todos">Todas as categorias</option>
+                    <option value="audio">Áudio</option>
+                    <option value="perifericos">Periféricos</option>
+                    <option value="acessorios">Acessórios</option>
+                </select>
+            </div>
+
+            <div class="grid-produtos" id="lista-produtos"></div>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <h2>Sobre a TechStore</h2>
+            <p>
+                A TechStore é uma loja virtual demonstrativa,
+                criada para oferecer uma experiência moderna
+                na descoberta de produtos tecnológicos.
+            </p>
+        </section>
+    </main>
+
+    <aside class="painel-carrinho" id="painel-carrinho">
+        <div class="carrinho-topo">
+            <h2>Meu carrinho</h2>
+            <button id="fechar-carrinho">✕</button>
+        </div>
+        <div id="itens-carrinho"></div>
+        <div class="carrinho-rodape">
+            <h3>Total: <span id="total">R$ 0,00</span></h3>
+            <button class="btn-finalizar" id="finalizar">
+                Finalizar pedido
+            </button>
+        </div>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+    <footer>
+        <p>© 2026 TechStore — Projeto de portfólio.</p>
+        <p>Desenvolvido com HTML, CSS e JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
